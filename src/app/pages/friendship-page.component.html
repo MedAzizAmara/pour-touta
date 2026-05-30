@@ -1,0 +1,33 @@
+<main class="page">
+  <div class="panel panel-inner">
+    <header class="topbar">
+      <div class="brand">Touta</div>
+
+      <nav class="nav">
+        <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Accueil</a>
+        <a routerLink="/messages" routerLinkActive="active">Messages</a>
+        <a routerLink="/amitie" routerLinkActive="active">Amitie</a>
+        <a routerLink="/message-special" routerLinkActive="active">Special</a>
+        <a routerLink="/voeux" routerLinkActive="active">Voeux</a>
+      </nav>
+    </header>
+
+    <section class="content-section">
+      <div class="section-copy">
+        <h1 class="page-title">Une amitie douce et sincere</h1>
+        <p class="page-intro">
+          Cette page pour Touta garde un ton affectueux, mais dans un esprit
+          propre, respectueux et clairement amical.
+        </p>
+      </div>
+
+      <div class="content-grid">
+        @for (note of notes; track note) {
+          <article class="note-card">
+            <p>{{ note }}</p>
+          </article>
+        }
+      </div>
+    </section>
+  </div>
+</main>

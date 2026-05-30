@@ -1,0 +1,33 @@
+<main class="page">
+  <div class="panel panel-inner">
+    <header class="topbar">
+      <div class="brand">Touta</div>
+
+      <nav class="nav">
+        <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Accueil</a>
+        <a routerLink="/messages" routerLinkActive="active">Messages</a>
+        <a routerLink="/amitie" routerLinkActive="active">Amitie</a>
+        <a routerLink="/message-special" routerLinkActive="active">Special</a>
+        <a routerLink="/voeux" routerLinkActive="active">Voeux</a>
+      </nav>
+    </header>
+
+    <section class="content-section">
+      <div class="section-copy">
+        <h1 class="page-title">Mes voeux pour Touta</h1>
+        <p class="page-intro">
+          Je souhaite a Touta une tres belle journee et une annee remplie de
+          bonnes choses.
+        </p>
+      </div>
+
+      <div class="accent-card">
+        <ul class="wish-list">
+          @for (wish of wishes; track wish) {
+            <li>{{ wish }}</li>
+          }
+        </ul>
+      </div>
+    </section>
+  </div>
+</main>

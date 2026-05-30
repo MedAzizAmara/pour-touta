@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="heartFill" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffbdd7" />
+      <stop offset="55%" stop-color="#ff7fb1" />
+      <stop offset="100%" stop-color="#ef4a90" />
+    </linearGradient>
+    <linearGradient id="heartShine" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.95" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+    </linearGradient>
+    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2.2" flood-color="#d94c86" flood-opacity="0.22"/>
+    </filter>
+  </defs>
+
+  <path
+    d="M32 55C28.2 52.2 24.8 49.7 21.8 47.4C13.8 41.2 9 35.6 9 27.4C9 18.9 15 12.5 23.2 12.5C28 12.5 31.3 14.6 32 17.1C32.7 14.6 36 12.5 40.8 12.5C49 12.5 55 18.9 55 27.4C55 35.6 50.2 41.2 42.2 47.4C39.2 49.7 35.8 52.2 32 55Z"
+    fill="url(#heartFill)"
+    stroke="#f7f9ff"
+    stroke-width="2.2"
+    stroke-linejoin="round"
+    filter="url(#softShadow)"
+  />
+
+  <path
+    d="M22 18.5C18.5 19.3 15.5 22.5 15.5 26.7C15.5 29.5 16.6 32 18.9 34.7"
+    fill="none"
+    stroke="url(#heartShine)"
+    stroke-width="3"
+    stroke-linecap="round"
+  />
+</svg>

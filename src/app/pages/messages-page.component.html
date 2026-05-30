@@ -1,0 +1,33 @@
+<main class="page">
+  <div class="panel panel-inner">
+    <header class="topbar">
+      <div class="brand">Touta</div>
+
+      <nav class="nav">
+        <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Accueil</a>
+        <a routerLink="/messages" routerLinkActive="active">Messages</a>
+        <a routerLink="/amitie" routerLinkActive="active">Amitie</a>
+        <a routerLink="/message-special" routerLinkActive="active">Special</a>
+        <a routerLink="/voeux" routerLinkActive="active">Voeux</a>
+      </nav>
+    </header>
+
+    <section class="content-section">
+      <div class="section-copy">
+        <h1 class="page-title">Quelques messages pour Touta</h1>
+        <p class="page-intro">
+          Des mots simples, tendres et sinceres pour marquer l anniversaire de
+          Touta avec douceur.
+        </p>
+      </div>
+
+      <div class="quote-grid">
+        @for (message of messages; track message) {
+          <article class="quote-card">
+            <p>{{ message }}</p>
+          </article>
+        }
+      </div>
+    </section>
+  </div>
+</main>

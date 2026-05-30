@@ -1,0 +1,92 @@
+<main class="page">
+  <div class="panel">
+    <header class="topbar">
+      <div class="brand">Touta</div>
+
+      <nav class="nav">
+        <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Accueil</a>
+        <a routerLink="/messages" routerLinkActive="active">Messages</a>
+        <a routerLink="/amitie" routerLinkActive="active">Amitie</a>
+        <a routerLink="/message-special" routerLinkActive="active">Special</a>
+        <a routerLink="/voeux" routerLinkActive="active">Voeux</a>
+      </nav>
+    </header>
+
+    <section class="hero hero-home">
+      <div class="hero-copy">
+        <h1 class="hero-title">
+          <span>Joyeux anniversaire,</span>
+          <span>Touta</span>
+        </h1>
+        <p>
+          Aujourd hui, je voulais simplement te dedier cette petite page,
+          Touta, pour te souhaiter une tres belle journee et te rappeler que tu
+          es une personne precieuse.
+        </p>
+
+        <div class="actions actions-home">
+          <a class="button button-outline" routerLink="/messages">LIRE LES MESSAGES</a>
+          <a class="button button-special" routerLink="/message-special">MESSAGE SPECIAL</a>
+          <a class="button button-filled" routerLink="/voeux">VOIR MES VOEUX</a>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <div class="visual-blob"></div>
+        <svg class="gift-scene" viewBox="0 0 520 380" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="giftPink" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#ff6997" />
+              <stop offset="100%" stop-color="#ff477e" />
+            </linearGradient>
+            <linearGradient id="shirtBlue" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#4d8ff5" />
+              <stop offset="100%" stop-color="#5468d6" />
+            </linearGradient>
+            <linearGradient id="leafFill" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#f7d9ea" />
+              <stop offset="100%" stop-color="#f0c0dc" />
+            </linearGradient>
+          </defs>
+
+          <path d="M130 318 C120 220 154 160 202 122 C248 86 316 78 382 116 C446 152 467 227 454 318 Z" fill="#fff8fb"/>
+          <path d="M119 320 C102 267 79 231 50 200 C21 168 10 119 44 98 C80 76 111 104 118 148 C124 191 126 265 119 320 Z" fill="url(#leafFill)"/>
+          <path d="M150 319 C154 268 168 225 195 185" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+          <path d="M410 317 C432 259 454 224 490 195 C515 174 527 129 498 102 C466 72 430 97 417 142 C405 184 402 252 410 317 Z" fill="url(#leafFill)"/>
+          <path d="M385 319 C381 267 367 222 343 181" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+
+          <ellipse cx="275" cy="332" rx="136" ry="11" fill="#f7c7d9"/>
+
+          <g transform="translate(168 122)">
+            <circle cx="41" cy="31" r="18" fill="#f5b2a3"/>
+            <path d="M27 31 C25 12 40 7 49 11 C57 15 61 26 55 35 C49 28 39 25 27 31 Z" fill="#5e3178"/>
+            <rect x="23" y="53" width="36" height="74" rx="12" fill="#9a3d91"/>
+            <rect x="51" y="56" width="19" height="67" rx="8" fill="#3b2b65"/>
+            <rect x="17" y="123" width="22" height="92" rx="10" fill="#342053"/>
+            <rect x="48" y="123" width="22" height="92" rx="10" fill="#342053"/>
+            <rect x="14" y="210" width="28" height="10" rx="5" fill="#2c183f"/>
+            <rect x="45" y="210" width="31" height="10" rx="5" fill="#2c183f"/>
+            <rect x="58" y="73" width="72" height="68" rx="14" fill="url(#giftPink)"/>
+            <rect x="88" y="73" width="12" height="68" rx="6" fill="#f52d76"/>
+            <rect x="58" y="102" width="72" height="12" rx="6" fill="#f52d76"/>
+            <path d="M88 74 C73 50 91 38 104 49 C113 58 103 72 88 74 Z" fill="#ff89b0"/>
+            <path d="M99 74 C114 50 96 38 83 49 C74 58 84 72 99 74 Z" fill="#ff89b0"/>
+          </g>
+
+          <g transform="translate(309 113)">
+            <circle cx="40" cy="30" r="18" fill="#f5b2a3"/>
+            <path d="M24 26 C28 7 48 5 58 17 C65 25 63 38 57 44 C49 36 40 28 24 26 Z" fill="#6b4bb8"/>
+            <rect x="24" y="53" width="36" height="42" rx="12" fill="url(#shirtBlue)"/>
+            <path d="M23 94 H61 L77 164 H8 Z" fill="#41235f"/>
+            <rect x="24" y="164" width="16" height="82" rx="8" fill="#ff708e"/>
+            <rect x="46" y="164" width="16" height="82" rx="8" fill="#ff708e"/>
+            <rect x="20" y="243" width="24" height="10" rx="5" fill="#2d2049"/>
+            <rect x="44" y="243" width="25" height="10" rx="5" fill="#2d2049"/>
+            <rect x="7" y="66" width="14" height="67" rx="7" fill="#ff708e" transform="rotate(36 14 100)"/>
+            <rect x="62" y="61" width="14" height="72" rx="7" fill="#ff708e" transform="rotate(-34 69 97)"/>
+          </g>
+        </svg>
+      </div>
+    </section>
+  </div>
+</main>
